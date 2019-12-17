@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.company.ms.model.CustomerEntity;
-import com.company.ms.service.CustomerServiceImpl;
+import com.company.ms.service.ICustomerService;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -22,7 +22,7 @@ import reactor.core.publisher.Mono;
 public class RestControllerCompany {
 
 	@Autowired
-	CustomerServiceImpl customerImpl;
+	ICustomerService customerImpl;
 
 	
 	@GetMapping("/getCompany")

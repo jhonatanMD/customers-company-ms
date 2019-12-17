@@ -13,9 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class CustomerEntity {
 
 	@Id
-	
 	private String CodCust;
-	
 	@NotEmpty(message = "not empty")
 	private String Busnam;
 	@NotEmpty(message = "not empty")
@@ -24,6 +22,9 @@ public class CustomerEntity {
 	private String Addr;
 	@NotEmpty(message = "not empty")
 	private String Num;
+	
+	private String profile;
+	
 	public String getCodCust() {
 		return CodCust;
 	}
@@ -54,7 +55,11 @@ public class CustomerEntity {
 	public void setNum(String num) {
 		Num = num;
 	}
-	
-	
+	public String getProfile() {
+		return profile;
+	}
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
 	
 }

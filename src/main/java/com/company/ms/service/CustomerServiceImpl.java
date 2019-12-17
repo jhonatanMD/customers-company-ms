@@ -17,7 +17,7 @@ public class CustomerServiceImpl  implements ICustomerService{
 	
 	@Override
 	public Flux<CustomerEntity> allCustomersCompany() {
-		// TODO Auto-generated method stub
+		
 		return repository.findAll();
 	}
 
